@@ -11,6 +11,7 @@
                                     <h5 class="card-title">Article list</h5>
                                     @can('Article Create')
                                         <a href="{{ url('article/create') }}" class="btn btn-info">Create</a>
+
                                     @endcan
                                 </div>
 

@@ -12,10 +12,10 @@
                             <img class="pt-7 pt-md-0 w-100" src="{{ asset('web_assets/assets/img/gallery/cover_img.jpg') }}" width="470" alt="hero-header" />
                         </div>
                         <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-                            <h4 class="fw-bold font-sans-serif">Become Master</h4>
-                            <h1 class="fs-6 fs-xl-7 mb-5">Learn New Skills Online Find Best Courses</h1>
-                            <a class="btn btn-primary me-2" href="#!" role="button">Get A Quote</a>
-                            <a class="btn btn-outline-secondary" href="#!" role="button">Read more</a>
+                            {{-- <h4 class="fw-bold font-sans-serif">Become Master</h4> --}}
+                            <h1 class="fs-6 fs-xl-7 mb-5">Welcome to our website, latest updates tailored to meet your needs and interests</h1>
+                            {{-- <a class="btn btn-primary me-2" href="#!" role="button">Get A Quote</a>
+                            <a class="btn btn-outline-secondary" href="#!" role="button">Read more</a> --}}
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                                 <img class="card-img-top w-100" src="{{ url($article->image) }}" alt="courses" />
                                 <div class="card-body">
                                     <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">{{ $article->title }}</h5>
-                                    <a class="text-muted fs--1 stretched-link text-decoration-none" href="{{ route('article.details', $article->id) }}">{{ strip_tags($article->description) }}</a>
+                                    <a class="text-muted fs--1 stretched-link text-decoration-none" href="{{ url('articles',  $article->id ) }}">{{ strip_tags($article->description) }}</a>
                                 </div>
                             </div>
                         </div>

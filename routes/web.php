@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [FrontEndController::class, 'showHomePage']);
-Route::get('/article/{id}', [FrontEndController::class, 'showArticleDetails'])->name('article.details');
+Route::get('/articles/{id}', [FrontEndController::class, 'showArticleDetails'])->name('article.details');
 
 Route::middleware([
     'auth:sanctum',
